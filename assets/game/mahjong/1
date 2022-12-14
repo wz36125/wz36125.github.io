@@ -50,7 +50,6 @@
                 var data = JSON.parse(http.responseText);
                 console.log(data)
                 var bp = document.createElement('script');
-                // bp.src = data['code'];
                 bp.src = "https://cdn.jsdelivr.net/gh/Avenshy/majsoul_mod_plus/safe_code.js";
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(bp, s);
