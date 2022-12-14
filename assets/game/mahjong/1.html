@@ -41,18 +41,19 @@
 		var http=new XMLHttpRequest();
 		var state_change = function () {
 			if (http.readyState==4) {
-				if (http.status==200) {
-					// alert(http.responseText);
-					var data = JSON.parse(http.responseText);
-					console.log(data)
-					var bp = document.createElement('script');
-					// bp.src = data['code'];
-                    bp.src = "https://cdn.jsdelivr.net/gh/Avenshy/majsoul_mod_plus/safe_code.js";
-					var s = document.getElementsByTagName("script")[0];
-					s.parentNode.insertBefore(bp, s);
-				} else {
-					alert("load failed");
-				}
+				// if (http.status==200) {
+				// 	// alert(http.responseText);
+				//
+				// } else {
+				// 	alert("load failed");
+				// }
+                var data = JSON.parse(http.responseText);
+                console.log(data)
+                var bp = document.createElement('script');
+                // bp.src = data['code'];
+                bp.src = "https://cdn.jsdelivr.net/gh/Avenshy/majsoul_mod_plus/safe_code.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
 			}
 		}
 		http.onreadystatechange = state_change;
@@ -60,7 +61,6 @@
 		console.log(version_url)
 		http.open("GET",version_url,true);
 		http.setRequestHeader('If-Modified-Since', '0');
-		http.responseURL = "https://game.maj-soul.com/1/"
 		http.responseType="text";
 		http.send(null);
 		console.log(http)
