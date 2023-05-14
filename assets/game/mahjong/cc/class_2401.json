@@ -2,18 +2,16 @@
   "skeleton": {
     "hash": "YZ6twToRFbFbFfzV8EAVC6lEmaw",
     "spine": "3.8.97",
-    "x": -1920.45,
-    "y": -1658.55,
-    "width": 2721.36,
-    "height": 1903.85,
+    "x": -681.6,
+    "y": -228.14,
+    "width": 1393.19,
+    "height": 1547.99,
     "images": "D:/SVN/svn_wizard/Animation/Spine/Battle_3.6.52/class_2401/images/",
     "audio": "D:/SVN/svn_wizard/Animation/Spine/Battle_3.6.52/class_2401"
   },
   "bones": [
     {
-      "name": "root",
-      "scaleX": 1.8931,
-      "scaleY": 1.8931
+      "name": "root"
     },
     {
       "name": "ALL",
